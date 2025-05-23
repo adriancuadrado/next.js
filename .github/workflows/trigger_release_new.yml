@@ -112,3 +112,5 @@ jobs:
         uses: changesets/action@v1
         with:
           version: pnpm ci:version
+        env:
+          RELEASE_TYPE: ${{ github.event.inputs.releaseType }}
